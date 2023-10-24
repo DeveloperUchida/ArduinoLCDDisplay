@@ -1,20 +1,15 @@
 #include <LiquidCrystal.h>
 
-// initialize the library with the numbers of the interface pins
+// インターフェースピンの番号でライブラリを初期化
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 
 void setup() {
-  // set up the LCD's number of columns and rows:
+  // LCDの列数と行数を設定:
   lcd.begin(16, 2);
-  // Print a message to the LCD.
-  lcd.print("Twitter@Ui_Shig");
+  // LCDにメッセージを表示:
+  lcd.print("ArdinoLCD");
 }
 
 void loop() {
-  // set the cursor to column 0, line 1
-  // (note: line 1 is the second row, since counting begins with 0):
-  lcd.setCursor(0, 1);
-  // print the number of seconds since reset:
-  lcd.print(millis() / 1000);
+  
 }
-
